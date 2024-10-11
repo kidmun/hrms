@@ -19,5 +19,6 @@ func (uc *UserController) CreateUser(ctx *gin.Context){
 		return
 	}
 	
+	
 
 }
