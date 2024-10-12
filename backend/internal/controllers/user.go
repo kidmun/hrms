@@ -12,13 +12,13 @@ type UserController struct {
 }
 
 
-func (uc *UserController) CreateUser(ctx *gin.Context){
-	var userInput models.UserRequest
-	if err := ctx.ShouldBindJSON(&userInput); err != nil {
-		ctx.JSON(http.StatusBadRequest, models.ErrorResponse{Message: err.Error()})
-		return
-	}
+// func (uc *UserController) CreateUser(ctx *gin.Context){
+// 	var userInput models.UserRequest
+// 	if err := ctx.ShouldBindJSON(&userInput); err != nil {
+// 		ctx.JSON(http.StatusBadRequest, models.ErrorResponse{Message: err.Error()})
+// 		return
+// 	}
 	
 	
 
-}
+// }
