@@ -11,7 +11,7 @@ type UserController struct {
 	userUsecase models.UserUsecase
 }
 
-
+// create user
 func (uc *UserController) CreateUser(ctx *gin.Context){
 	var userInput models.UserRequest
 	if err := ctx.ShouldBindJSON(&userInput); err != nil {
@@ -22,3 +22,4 @@ func (uc *UserController) CreateUser(ctx *gin.Context){
 	
 
 }
+
